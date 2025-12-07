@@ -6,7 +6,17 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E53FAD242EBF1DB60052CA6C /* LikedRecipe+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53FAD222EBF1DB60052CA6C /* LikedRecipe+CoreDataClass.swift */; };
+		E53FAD252EBF1DB60052CA6C /* LikedRecipe+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53FAD232EBF1DB60052CA6C /* LikedRecipe+CoreDataProperties.swift */; };
+		E55C7C682E93A7A800435DC1 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E55C7C672E93A7A800435DC1 /* FirebaseAuth */; };
+		E55C7C6A2E93A7A800435DC1 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = E55C7C692E93A7A800435DC1 /* FirebaseCore */; };
+		E55C7C6C2E93A7A800435DC1 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = E55C7C6B2E93A7A800435DC1 /* FirebaseFirestore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		E53FAD222EBF1DB60052CA6C /* LikedRecipe+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "LikedRecipe+CoreDataClass.swift"; path = "FIT3178-Assignment/DataModel/LikedRecipe+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E53FAD232EBF1DB60052CA6C /* LikedRecipe+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "LikedRecipe+CoreDataProperties.swift"; path = "FIT3178-Assignment/DataModel/LikedRecipe+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		E56EE95A2E55AD810010606B /* FIT3178-Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FIT3178-Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -36,6 +46,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E55C7C6A2E93A7A800435DC1 /* FirebaseCore in Frameworks */,
+				E55C7C682E93A7A800435DC1 /* FirebaseAuth in Frameworks */,
+				E55C7C6C2E93A7A800435DC1 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +58,8 @@
 		E56EE9512E55AD810010606B = {
 			isa = PBXGroup;
 			children = (
+				E53FAD222EBF1DB60052CA6C /* LikedRecipe+CoreDataClass.swift */,
+				E53FAD232EBF1DB60052CA6C /* LikedRecipe+CoreDataProperties.swift */,
 				E56EE95C2E55AD810010606B /* FIT3178-Assignment */,
 				E56EE95B2E55AD810010606B /* Products */,
 			);
@@ -78,6 +93,9 @@
 			);
 			name = "FIT3178-Assignment";
 			packageProductDependencies = (
+				E55C7C672E93A7A800435DC1 /* FirebaseAuth */,
+				E55C7C692E93A7A800435DC1 /* FirebaseCore */,
+				E55C7C6B2E93A7A800435DC1 /* FirebaseFirestore */,
 			);
 			productName = "FIT3178-Assignment";
 			productReference = E56EE95A2E55AD810010606B /* FIT3178-Assignment.app */;
@@ -107,6 +125,9 @@
 			);
 			mainGroup = E56EE9512E55AD810010606B;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				E55C7C662E93A7A800435DC1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = E56EE95B2E55AD810010606B /* Products */;
 			projectDirPath = "";
@@ -132,6 +153,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E53FAD242EBF1DB60052CA6C /* LikedRecipe+CoreDataClass.swift in Sources */,
+				E53FAD252EBF1DB60052CA6C /* LikedRecipe+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +168,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZMSXYF7W7W;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "FIT3178-Assignment/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -172,6 +196,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZMSXYF7W7W;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "FIT3178-Assignment/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -333,6 +358,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E55C7C662E93A7A800435DC1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E55C7C672E93A7A800435DC1 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E55C7C662E93A7A800435DC1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		E55C7C692E93A7A800435DC1 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E55C7C662E93A7A800435DC1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		E55C7C6B2E93A7A800435DC1 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E55C7C662E93A7A800435DC1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E56EE9522E55AD810010606B /* Project object */;
 }
